@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verificação de País</title>
+</head>
+<body>
+    <h1>Verificação de Identidade</h1>
+    Onde você vive? <input type="text" name="txtp" id="itxtp">
+    <input type="button" value="Verificar" onclick="verificar()">
+    <div id="res">
+
+    </div>
+
+    <script>
+        function verificar(){
+        var pais = document.getElementById("itxtp")
+        var res = document.getElementById("res")
+        
+        res.innerHTML = "Seu país é: " + pais 
+        }
+    </script>
+</body>
+</html>
