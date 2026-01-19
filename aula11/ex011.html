@@ -15,10 +15,19 @@
 
     <script>
         function verificar(){
-        var pais = document.getElementById("itxtp")
-        var res = document.getElementById("res")
-        
-        res.innerHTML = "Seu país é: " + pais 
+
+            var txp = document.getElementById("itxtp")
+            var res = document.getElementById("res")
+            var p = String(txp.value)
+            
+            res.innerHTML = "Seu país é: " + p + "<br>" 
+            
+
+            if(p == "Brasil" ||p == "brasil"){
+                res.innerHTML += "Você é Brasileiro"
+            } else{
+                res.innerHTML += "Você é Estrangeiro"
+            }
         }
     </script>
 </body>
